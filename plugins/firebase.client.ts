@@ -4,7 +4,7 @@ import { getAuth } from 'firebase/auth'
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin(() => {
-  const config = useRuntimeConfig()
+  const config = useRuntimeConfig().public
   const firebaseConfig = {
     apiKey: config.firebaseApiKey,
     authDomain: config.firebaseAuthDomain,
