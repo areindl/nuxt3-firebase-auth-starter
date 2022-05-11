@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "firebase": "^9.6.8",
-    "firebase-admin": "^10.0.2"
+    "firebase-admin": "^10.0.2",
+    "node-fetch": "^3.2.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.18.8",
