@@ -9,6 +9,7 @@ const disabled = ref(false)
 
 const signIn = async() => {
   disabled.value = true
+
   try {
     await signInWithEmailAndPassword(
       $firebaseAuth,
@@ -18,7 +19,7 @@ const signIn = async() => {
     router.push('/private')
   }
   catch (e) {
-    alert(e.code)
+    alert(e)
   }
   disabled.value = false
 }
